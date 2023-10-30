@@ -2098,6 +2098,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
+		/* height: 10rem; */
 		position: relative;
 		overflow: hidden;
 		background: #fff;
@@ -2107,27 +2108,42 @@ input, select, textarea {
 		border-bottom: solid 2px #e5e5e5;
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
 		background: url("../../images/banner.jpg");
 		background-size: cover;
-		padding: 10em 0;
+		padding: 2em 0;
+		display: flex;
 	}
-
+		#banner .enso-logo{
+			width: 100%;
+		}
 		#banner p {
 			font-weight: 400;
-			font-size: 2em;
+			font-size: 1.5em;
 			line-height: 1.5em;
-			letter-spacing: 4px;
+			/* letter-spacing: 4px; */
 			text-align: center;
-			margin: 0;
+			/* margin: 0; */
+			width: 95%;
+			height: 100%;
+			display:flex;
+			align-items: center;
+			padding-left: 2em;
 		}
 
 		#banner strong {
-			color: inherit;
+			width: 25%;
+		}
+
+		#banner > .logo-container {
+			/* position: relative; */
+			width: 25%;
 		}
 
 		#banner > .container {
-			position: relative;
+			/* position: relative; */
+			width: 75%;
+			
 		}
 
 			#banner > .container:before, #banner > .container:after {
@@ -2138,7 +2154,7 @@ input, select, textarea {
 				width: 35px;
 				height: 141px;
 				margin-top: -70px;
-				background: url("images/bracket.svg");
+				/* background: url("images/bracket.svg"); */
 				opacity: 0.15;
 			}
 

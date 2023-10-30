@@ -12,6 +12,17 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<script>
+		function scrollToElement(elementId) {
+			var element = document.getElementById(elementId);
+			if (element) {
+				element.scrollIntoView({
+					behavior: 'smooth' // Optional: Use smooth scrolling
+				});
+			}
+		}
+	</script>
 </head>
 
 <body class="homepage is-preload">
@@ -34,15 +45,17 @@
 						<li>
 							<a href="#" class="icon fa-chart-bar"><span>Projects</span></a>
 							<ul>
-								<li><a href="#">Bento Sushi - Raku Sushi </a></li>
-								<li><a href="#">Asian Fusion Hot Dog</a></li>
-								<li><a href="#">Asian Herbal Tea</a></li>
+								<li><a href="#" onclick="scrollToElement('sushi-section')">Bento Sushi - Raku Sushi </a>
+								</li>
+								<li><a href="#" onclick="scrollToElement('hotdog-section')">Asian Fusion Hot Dog</a>
+								</li>
+								<li><a href="#" onclick="scrollToElement('tea-section')">Asian Herbal Tea</a></li>
 							</ul>
 						</li>
-						<li><a class="icon solid fa-address-book" href="left-sidebar.html"><span>Contact Us</span></a>
+						<li><a class="icon solid fa-address-book" href="#"><span>Contact Us</span></a>
 						</li>
 						<!-- <li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li> -->
-						<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>Career</span></a></li>
+						<li><a class="icon solid fa-sitemap" href="#"><span>Career</span></a></li>
 					</ul>
 				</nav>
 
@@ -109,8 +122,11 @@
 
 		<!-- Banner -->
 		<section id="banner">
+			<div class='logo-container'>
+				<img src="images/Enso.png" class="enso-logo" />
+			</div>
 			<div class="container">
-				<p>Enso Food Inc. envisions a world where diverse and delicious culinary experiences bring people
+				<p>Enso Food Inc. Envisions a world where diverse and delicious culinary experiences bring people
 					together, fostering cultural appreciation and culinary innovation. We strive to be a leading name in
 					the food industry, promoting sustainability and creativity, while continuously delighting our
 					customers with our unique offerings.</p>
@@ -126,7 +142,7 @@
 					<div id="content" class="col-8 col-12-medium">
 
 						<!-- Post -->
-						<article class="box post">
+						<article class="box post" id="sushi-section">
 							<header>
 								<h2><a href="#">Bento Sushi - Raku Sushi</a></h2>
 							</header>
@@ -143,44 +159,46 @@
 								Calgary and beyond.
 							</p>
 							<ul class="actions">
-								<li><a href="left-sidebar.html" class="button icon solid fa-file"
-										target="_blank">Continue Reading</a>
+								<li><a href="sushi.html" class="button icon solid fa-file">Continue
+										Reading</a>
 								</li>
 							</ul>
 						</article>
 
 						<!-- Post -->
-						<article class="box post">
+						<article class="box post" id="hotdog-section">
 							<header>
-								<h2><a href="#">By the way, many thanks to <strong>regularjane</strong>
-										for these awesome demo photos</a></h2>
+								<h2><a href="#">Asian Fusion Hot Dog</h2>
 							</header>
 							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<h3>You should probably check out her work</h3>
-							<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-								ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-								sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-								magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-								consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-								justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-								Curabitur leo nibh, rutrum malesuada.</p>
-							<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-								Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-								vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-								magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-								tristique at erat. Curabitur leo nibh, rutrum eu malesuada in, tristique
-								at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-								tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-								magna tempus.</p>
+							<p>Welcome to AsiaBite Hot Dogs, where culinary creativity meets your cravings. Our
+								fusion-style hot dogs redefine the classic, infusing them with vibrant Asian-inspired
+								flavors and the finest high-quality ingredients. With a focus on fast, convenient
+								service, we cater to those on the move without compromising on taste. Our affordable
+								prices make exceptional dining accessible, and our commitment to personalized service
+								ensures every bite is tailored to your preferences. Join us in savoring the
+								extraordinary, one hot dog at a time</p>
 							<ul class="actions">
-								<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
+								<li><a href="hot-dog.html" class="button icon solid fa-file">Continue Reading</a></li>
 							</ul>
 						</article>
-
+						<article class="box post" id="tea-section">
+							<header>
+								<h2><a href="#">Asian Herbal Tea</h2>
+							</header>
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<p>Welcome to "Herbal Radiance Tea." We offer a unique blend of herbs carefully crafted to
+								nourish your inner beauty. Our tea combines delicate flowers, succulent fruits, and
+								nurturing leaves, each chosen for its role in enhancing your natural radiance. "Trà
+								Dưỡng Nhan," or "Herbal Radiance Tea," has a rich history, cherished as a beauty secret
+								of royal courts. Today, it's a beloved treasure for women, with benefits extending
+								beyond skin-deep beauty to skincare, hormonal balance, and more. Explore the world of
+								"Herbal Radiance Tea" where ancient wisdom meets modern appreciation, nurturing your
+								radiance from within. Join us on this journey to enhance your natural allure.</p>
+							<ul class="actions">
+								<li><a href="tea.html" class="button icon solid fa-file">Continue Reading</a></li>
+							</ul>
+						</article>
 					</div>
 
 					<!-- Sidebar -->
@@ -241,31 +259,7 @@
 											create something remarkable and reap the rewards of a thriving culinary
 											venture. Contact us today to be a part of our culinary revolution!
 										</p>
-										<ul class="actions">
-											<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-										</ul>
-									</article>
 
-								</li>
-								<li>
-
-									<!-- Highlight -->
-									<article class="box highlight">
-										<header>
-											<h3><a href="#">Something of less note</a></h3>
-										</header>
-										<a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
-										<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-											vel quam
-											viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut
-											odio facilisis
-											convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut
-											interdum tempus
-											facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.
-										</p>
-										<ul class="actions">
-											<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-										</ul>
 									</article>
 
 								</li>
@@ -281,65 +275,51 @@
 		<!-- Footer -->
 		<section id="footer">
 			<div class="container">
-				<header>
-					<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-				</header>
 				<div class="row">
 					<div class="col-6 col-12-medium">
 						<section>
-							<form method="post" action="#">
-								<div class="row gtr-50">
-									<div class="col-6 col-12-small">
-										<input name="name" placeholder="Name" type="text" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input name="email" placeholder="Email" type="text" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<a href="#" class="form-button-submit button icon solid fa-envelope">Send
-											Message</a>
-									</div>
-								</div>
-							</form>
+							<h2>STAY CONNECTED</h2>
+							<p>Enso Food Inc. is a dynamic and innovative culinary venture dedicated to redefining the
+								food industry. Our company was founded with a passion for bringing diverse and
+								delectable culinary experiences to people's lives. Through an array of exciting
+								projects, such as sushi franchises, fusion food trucks, Asian fast-food stores, and the
+								creation of herbal teas, we're committed to offering unique and high-quality flavors
+								that cater to the evolving tastes of our customers. We place a strong emphasis on
+								sustainability, quality, and creativity in all aspects of our business, ensuring that
+								every dish and beverage we serve embodies our commitment to excellence. Enso Food Inc.
+								is more than just a food company; it's a catalyst for culinary adventures, a bridge
+								between cultures, and a source of joy in the world of food. Join us in savoring the
+								extraordinary and experiencing the joy of food like never before.</p>
 						</section>
 					</div>
 					<div class="col-6 col-12-medium">
 						<section>
-							<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-								mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-								leo nibh, rutrum eu malesuada.</p>
+							<h2>CONTACT US</h2>
 							<div class="row">
 								<div class="col-6 col-12-small">
 									<ul class="icons">
 										<li class="icon solid fa-home">
-											1234 Somewhere Road<br />
-											Nashville, TN 00000<br />
-											USA
+											2715 12 Ave SE<br />
+											Calgary, AB<br />
+											T2A 4X8
 										</li>
 										<li class="icon solid fa-phone">
-											(000) 000-0000
+											(647) 913-0868
 										</li>
 										<li class="icon solid fa-envelope">
-											<a href="#">info@untitled.tld</a>
+											<a href="#">ctrinh@ensofood.ca</a>
 										</li>
 									</ul>
 								</div>
 								<div class="col-6 col-12-small">
 									<ul class="icons">
-										<li class="icon brands fa-twitter">
-											<a href="#">@untitled</a>
-										</li>
 										<li class="icon brands fa-instagram">
-											<a href="#">instagram.com/untitled</a>
-										</li>
-										<li class="icon brands fa-dribbble">
-											<a href="#">dribbble.com/untitled</a>
+											<a href="https://www.instagram.com/ensofoodinc/"
+												target="_blank">instagram.com/ensofood</a>
 										</li>
 										<li class="icon brands fa-facebook-f">
-											<a href="#">facebook.com/untitled</a>
+											<a href="https://www.facebook.com/profile.php?id=61552659223705"
+												target="_blank">facebook.com/ensofood</a>
 										</li>
 									</ul>
 								</div>
@@ -347,12 +327,6 @@
 						</section>
 					</div>
 				</div>
-			</div>
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>&copy; Untitled. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
 			</div>
 		</section>
 
