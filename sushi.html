@@ -12,6 +12,16 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script>
+		function scrollToElement(elementId) {
+			var element = document.getElementById(elementId);
+			if (element) {
+				element.scrollIntoView({
+					behavior: 'smooth' // Optional: Use smooth scrolling
+				});
+			}
+		}
+	</script>
 </head>
 
 <body class="left-sidebar is-preload">
@@ -39,7 +49,8 @@
 								<li><a href="#">Asian Herbal Tea</a></li>
 							</ul>
 						</li>
-						<li><a class="icon solid fa-address-book" href="#"><span>Contact Us</span></a>
+						<li><a class="icon solid fa-address-book" href="#"
+								onclick="scrollToElement('contact-us')"><span>Contact Us</span></a>
 						</li>
 						<!-- <li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li> -->
 						<li><a class="icon solid fa-sitemap" href="#"><span>Career</span></a></li>
@@ -151,22 +162,26 @@
 								right
 								to your neighborhood. Here's a glimpse of what this exciting partnership will offer:</p>
 
-							<p>1. Fresh Sushi Creations: Bento Sushi is all about freshness. You can expect a wide
+							<p><strong>1. Fresh Sushi Creations:</strong> Bento Sushi is all about freshness. You can
+								expect a wide
 								variety
 								of sushi creations prepared using the finest ingredients, ensuring a delightful and
 								flavorful dining experience.</p>
 
-							<p>2. Diverse Menu Options: Whether you're a sushi connoisseur or new to this Japanese
+							<p><strong>2. Diverse Menu Options:</strong> Whether you're a sushi connoisseur or new to
+								this Japanese
 								delight,
 								our menu caters to all tastes. From classic rolls to innovative and contemporary sushi
 								creations, there's something for everyone.</p>
 
-							<p>3. Exceptional Guest Service: Bento Sushi prides itself on delivering top-notch customer
+							<p><strong>3. Exceptional Guest Service:</strong> Bento Sushi prides itself on delivering
+								top-notch customer
 								service. Our friendly and knowledgeable staff are committed to ensuring you have a
 								memorable
 								visit, whether you're dining in-store or grabbing a quick meal to go.</p>
 
-							<p>4. A Partnership That Cares: This partnership is not just about bringing great food to
+							<p><strong>4. A Partnership That Cares:</strong> This partnership is not just about bringing
+								great food to
 								your
 								local stores. It's about creating a positive impact on the community. By supporting this
 								project, you're contributing to local job opportunities and helping us strengthen our
@@ -204,7 +219,7 @@
 
 		<!-- Footer -->
 		<section id="footer">
-			<div class="container">
+			<div class="container" id="contact-us">
 				<div class="row">
 					<div class="col-6 col-12-medium">
 						<section>

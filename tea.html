@@ -12,6 +12,16 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script>
+		function scrollToElement(elementId) {
+			var element = document.getElementById(elementId);
+			if (element) {
+				element.scrollIntoView({
+					behavior: 'smooth' // Optional: Use smooth scrolling
+				});
+			}
+		}
+	</script>
 </head>
 
 <body class="left-sidebar is-preload">
@@ -39,7 +49,8 @@
 								<li><a href="#">Asian Herbal Tea</a></li>
 							</ul>
 						</li>
-						<li><a class="icon solid fa-address-book" href="#"><span>Contact Us</span></a>
+						<li><a class="icon solid fa-address-book" href="#"
+								onclick="scrollToElement('contact-us')"><span>Contact Us</span></a>
 						</li>
 						<!-- <li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li> -->
 						<li><a class="icon solid fa-sitemap" href="#"><span>Career</span></a></li>
@@ -198,8 +209,8 @@
 
 		<!-- Footer -->
 		<section id="footer">
-			<div class="container">
-				<div class="row">
+			<div class="container" id="contact-us">
+				<div class=" row">
 					<div class="col-6 col-12-medium">
 						<section>
 							<h2>STAY CONNECTED</h2>
